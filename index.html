@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a1140612d3.js" crossorigin="anonymous"></script>
+    <title>Leidy Sandoval - Profolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fondoStyles.css">
+    <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/efetoColor.css">
+</head>
+<body>
+    <section class="animation_background">
+        <svg id="svg">
+            <defs>
+                <filter id="disFilter">
+                    <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="3" seed="1" result="turbulence">
+                        <animate attributeName="baseFrequency" values="0.01;0.005;0.01;" dur="30s" begin="0" repeatCount="indefinite" />
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="20" xChannelSelector="R" yChannelSelector="B" result="displacement" />
+                </filter>
+            </defs>
+            <g id="background">
+                <image xlink:href="img/fondo1.jpg" x="-10" y="-10" height="110%" width="110%" preserveAspectRatio="xMidYMid slice" />
+            </g>
+        </svg>
+    </section>
+    <header class="headerPrincipal">
+        <div class="container">
+            <h1 class="header_logo">
+                <a href="./index.html">
+                    <div class="words">
+                        <span>L</span>
+                        <span>e</span>
+                        <span>i</span>
+                        <span>d</span>
+                        <span>y</span>
+                    </div>
+                </a>
+            </h1>
+            <nav class="headerPrincipal_nav">
+                <input id="btSobreMi" class="headerPrincipal_nav__link" type="submit" value="Sobre Mi" onclick="location.href='#sobreMi_nav'">
+                <input id="btSkills" class="headerPrincipal_nav__link" type="submit" value="Skills" onclick="location.href='#skills_nav'">
+                <input id="btHobbies" class="headerPrincipal_nav__link" type="submit" value="Hobbies" onclick="location.href='#hobbies_nav'">
+                <input id="btFormacion" class="headerPrincipal_nav__link" type="submit" value="Formación" onclick="location.href='#formacion_nav'">
+                <input id="btProyectos" class="headerPrincipal_nav__link" type="submit" value="Proyectos" onclick="location.href='#proyectos_nav'">
+                <input id="btContacto" class="headerPrincipal_nav__link" type="submit" value="Contacto" onclick="location.href='#contacto_nav'">
+            </nav>
+            <h6 class="headerPrincipal_email"><a href="mailto:leidysan0893@gmail.com">leidysan0893@gmail.com</a></h6>
+        </div>
+    </header>
+    <main class="contenidoPrincipal">
+        <section class="principal">
+            <div class="container">
+                <div class="contenidoPrincipal_text">
+                    <div class="imgEmpresarial">
+                        <img class="img_personal" src="./img/miFoto.png" alt="Leidy Sandoval - Dev Front-End Students">
+                    </div>
+                    <ul class="presentacion_lista">
+                        <li class="presentacion">Hola, mi nombre es</li>
+                        <li class="presentacion1">Leidy Sandoval Buzano.</li>
+                        <li class="presentacion2">Estudiante Front-end.</li>
+                        <li class="comentario">Actualmente estoy participando del proyecto Oracle ONE G4 en Alura Latam.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="sobreMi_nav" class="sobreMi">
+            <div class="container">
+                <div class="sobreMi_text">
+                    <h2 class="sobreMi_text__title">Sobre Mí</h2>
+                    <ul class="sobreMi_text__list">
+                        <li class="sobreMi_text__item styleSobreMi">Mi nombre es <p>Leidy Sandoval Buzano,</p> vivo en Costa Rica, Limón. Tengo 29 años, actualmente estoy cursando proyecto Oracle ONE G4 en Alura Latam.</li>
+                        <li class="sobreMi_text__item styleCursiva">Soy una persona curiosa, creativa y me enamoré de la programación. Desde finales del 2022, inicié mis primeros pasos en la programación gracias a Oracle. Trato de aprender nuevas tecnologías, mejorar mis habilidades cada día, y adaptarme a los cambios. Deseo ampliar mis conocimientos y evolucionar constantemente.</li>
+                    </ul>
+                    <p class="sobreMi_text__item">Firma</p>
+                    <button id="cv" class="sobreMi_button">Mi Cv</button>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="skills_nav" class="skills">
+            <div class="container">
+                <div class="skills_text">
+                    <h2 class="skills_text__title">Skills</h2>
+                    <ul class="skills_text__list">
+                        <li>HTML5<i class="skills_text__item fa fa-html5 fa-2x"></i></li>
+                        <li>Javascript<i class="skills_text__item fa-brands fa-js-square fa-2x"></i></li>
+                        <li>Github<i class="skills_text__item fab fa-github-square fa-2x"></i></li>
+                        <li>CSS3<i class="skills_text__item fab fa-css3-alt fa-2x"></i></li>
+                        <li>Trello<i class="skills_text__item fa-brands fa-trello fa-2x"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="hobbies_nav" class="hobbies">
+            <div class="container">
+                <div class="hobbies_text">
+                    <h2 class="hobbies_text__title">Hobbies</h2>
+                    <ul class="hobbies_text__list">
+                        <li>Oir Musica<i class="hobbies_text__item fa-solid fa-music fa-2x"></i></li>
+                        <li>Cocinar<i class="hobbies_text__item fa-solid fa-kitchen-set fa-2x"></i></li>
+                        <li>Ver K-dramas<i class="hobbies_text__item fa-solid fa-film fa-2x"></i></li>
+                        <li>Programar<i class="hobbies_text__item fa-solid fa-laptop-code fa-2x"></i></li>
+                        <li>Pasear<i class="hobbies_text__item fa-solid fa-person-walking fa-2x"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="formacion_nav" class="formacion">
+            <div class="container">
+                <div class="formacion_text">
+                    <h2 class="formacion_text__title">Formación Académica</h2>
+                    <div class="formacion_text__list">
+                        <ul>
+                            <li class="formacion_text__item"><img class="alura-logo" src="./img/alura-logo.png"></li>
+                            <li class="formacion_text__item"><img src="./img/oracle-one-logo.png"></li>
+                            <li class="formacion_text__item">2022</li>
+                        </ul>
+                        <div class="formacion_text__list">
+                            <ul>
+                                <li class="formacion_text__item"><a href="https://app.aluracursos.com/user/leidysan0893/degree-programacion-primeros-pasos-grupo4-one-15491/certificate" target="_blank">Principiante en Programación</a></li>
+                                <li class="formacion_text__item"><a href="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671210503Prancheta_3.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_esp&utm_medium=email&utm_source=RD+Station" target="_blank">Insignia ONE Alura Challenge Proyecto 1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="proyectos_nav" class="proyectos">
+            <div class="container">
+                <div class="proyectos_text">
+                    <h2 class="proyectos_text__title">Proyectos</h2>
+                    <div class="container_proyectos">
+                        <div class="proyectos_text__area img1">
+                            <p class="proyectos_text__item bg">Challenge Ahorcado - Segundo Challenge Formación ONE
+                            </p>
+                            <input id="btRepo" class="proyectos_button" type="submit" value="Repositorio"
+                                onclick="location.href='https://github.com/Leidy-dii/Desafio-Juego-Ahorcado.github.io.git';" target="_blank">
+                            <input id="btDemo" class="proyectos_button" type="submit" value="Ver demo"
+                                onclick="location.href='https://leidy-dii.github.io/Desafio-Juego-Ahorcado.github.io/';" target="_blank">
+                        </div>
+                        <div class="proyectos_text__area img2">
+                            <p class="proyectos_text__item bg">Challenge Encriptador - Primer Challenge Formación ONE
+                            </p>
+                            <input id="btRepo" class="proyectos_button" type="submit" value="Repositorio"
+                                onclick="location.href='https://github.com/Leidy-dii/ChallengeOne.github.io.git';" target="_blank">
+                            <input id="btDemo" class="proyectos_button" type="submit" value="Ver demo"
+                                onclick="location.href='https://leidy-dii.github.io/ChallengeOne.github.io/';" target="_blank">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!---->
+        <section id="contacto_nav" class="contacto">
+            <div class="container">
+                <h2 class="contacto__titulo">Contacto</h2>
+                <form action="#" class="formulario" id="formulario" method="post">
+                    <div class="input-container">
+                        <input class="contacto__input" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" data-tipo="nombre">
+                        <label for="nombre"></label>
+                    </div>
+                    <div class="input-container">
+                        <input class="contacto__input" type="text" name="email" id="email" placeholder="E-mail" data-tipo="email" >
+                        <label for="email"></label>
+                    </div>
+                    <div class="input-container">
+                        <input class="contacto__input" type="text" name="asunto" id="asunto" placeholder="Asunto" data-tipo="asunto" >
+                        <label for="asunto"></label>
+                    </div>
+                    <div class="input-container">
+                        <textarea class="contacto__textarea" rows="5" cols="26" id="mensaje" name="mensaje" placeholder="Su mensaje" data-tipo="mensaje"></textarea>
+                        <label for="mensaje"></label>
+                    </div>
+                    <input type="submit" class="contacto__boton" name="enviar" id="btn-enviar" disabled="true">
+                </form>
+            </div>
+            </div>
+        </section>
+        <!---->
+        <section class="social">
+            <div class="redesSociales icon">
+                <a href="https://github.com/Leidy-dii" target="_blank"><i class="contenidoPrincipal_link__1 fa fa-github-square github fa-4x"></i></a>
+                <a href="https://www.instagram.com/iamleidy_93/" target="_blank"><i class="contenidoPrincipal_link__2 fa fa-instagram fa-4x"></i></a>
+                <a href="https://www.linkedin.com/in/leidy-sandoval-52666a259/" target="_blank"><i class="contenidoPrincipal_link__3 fa fa-linkedin-square fa-4x"></i></a>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="piePagina">
+
+        <section class="piePagina_pincipal">
+            <div class="container">
+                <h3>By Leidy-dii &copy 2023</h3>
+            </div>
+        </section>
+    </footer>
+<script src="./js/botonera.js"></script>
+<script src="./js/validacion.js"></script>
+</body>
+</html>
